@@ -1,0 +1,52 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "5.7",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "UE_AmbApproachAvoid",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "OpenXR",
+			"Enabled": true
+		},
+		{
+			"Name": "OpenXREyeTracker",
+			"Enabled": true
+		},
+		{
+			"Name": "OpenXRHandTracking",
+			"Enabled": true
+		},
+		{
+			"Name": "XRVisualization",
+			"Enabled": true
+		},
+		{
+			"Name": "ProceduralVegetationEditor",
+			"Enabled": true
+		}
+	],
+	"TargetPlatforms": [
+		"Android",
+		"IOS",
+		"Linux",
+		"Mac",
+		"PS4",
+		"PS5",
+		"Windows",
+		"WindowsNoEditor",
+		"Switch",
+		"XboxOne",
+		"XSX",
+		"VisionOS"
+	]
+}
