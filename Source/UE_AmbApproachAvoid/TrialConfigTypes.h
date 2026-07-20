@@ -15,6 +15,7 @@ enum class ELandmarkType : uint8
 	Pit
 };
 
+
 /** One landmark to place in a trial. */
 USTRUCT(BlueprintType)
 struct FLandmarkConfig
@@ -27,7 +28,9 @@ struct FLandmarkConfig
 
 	UPROPERTY(BlueprintReadWrite, Category = "Trial Config")
 	ELandmarkType Type = ELandmarkType::Tree;
-
+	
+	
+	
 	// Split into Location + Rotation (instead of a full FTransform) so the
 	// JSON stays human-editable. Build the FTransform at spawn time in BP.
 	UPROPERTY(BlueprintReadWrite, Category = "Trial Config")
@@ -35,6 +38,19 @@ struct FLandmarkConfig
 
 	UPROPERTY(BlueprintReadWrite, Category = "Trial Config")
 	FRotator Rotation = FRotator::ZeroRotator;
+
+
+	// Name to get specific mesh type
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Trial Config")
+	FName Mesh;
+
+	//Editable boolean value to apply scare property to given mesh
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Trial Config")
+	int32 Scare = 0;
+
+	//Editable selector for scare type applied to mesh
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Trial Config")
+	FName ScareType = FName(TEXT("Spider"));
 };
 
 /** One treasure chest to place in a trial. */
@@ -55,6 +71,14 @@ struct FChestConfig
 	// Optional: which landmark this chest is associated with (by Id).
 	UPROPERTY(BlueprintReadWrite, Category = "Trial Config")
 	FString LandmarkId;
+
+	// Name to get specific chest mesh type
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Trial Config")
+	FName Mesh;
+
+	//Editable reward value associated with chest type
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Trial Config")
+	int32 Reward = 0;
 };
 
 /** A single trial: a full set of landmarks + chests. */
