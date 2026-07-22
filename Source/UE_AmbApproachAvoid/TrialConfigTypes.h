@@ -16,6 +16,19 @@ enum class ELandmarkType : uint8
 };
 
 
+USTRUCT(BlueprintType)
+struct FMeshPart
+{
+	GENERATED_BODY()
+
+	// Lists all individual components in completed mesh
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FName ComponentTag; // e.g. "Base", "Lid"
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FName MeshKey; // key into MeshLibrary, e.g. "SM_Oak"
+};
+
 /** One landmark to place in a trial. */
 USTRUCT(BlueprintType)
 struct FLandmarkConfig
@@ -41,8 +54,8 @@ struct FLandmarkConfig
 
 
 	// Name to get specific mesh type
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Trial Config")
-	FName Mesh;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TArray<FMeshPart> MeshParts;
 
 	//Editable boolean value to apply scare property to given mesh
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Trial Config")
@@ -73,8 +86,8 @@ struct FChestConfig
 	FString LandmarkId;
 
 	// Name to get specific chest mesh type
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Trial Config")
-	FName Mesh;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TArray<FMeshPart> MeshParts;
 
 	//Editable reward value associated with chest type
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Trial Config")
@@ -111,3 +124,5 @@ struct FExperimentConfig
 	UPROPERTY(BlueprintReadWrite, Category = "Trial Config")
 	TArray<FTrialConfig> Trials;
 };
+
+

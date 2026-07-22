@@ -7,27 +7,54 @@
         {
           "id": "tree_a",
           "type": "Tree",
-          "location": { "x": -400.0, "y": 230.0, "z": 0.0 },
+          "location": { "x": -4000.0, "y": 30.0, "z": 0.0 },
           "rotation": { "pitch": 0.0, "yaw": 90.0, "roll": 0.0 },
-          "mesh": "SM_Maple",
-          "scare": 0,
+          "meshParts": [{ "componentTag": "Base", "meshKey": "SM_Maple"}],
+          "scare": 1,
           "scaretype": "Spider"
         },
         {
           "id": "tree_b",
           "type": "Tree",
-          "location": { "x": -230.0, "y": -250.0, "z": 0.0 },
+          "location": { "x": -3000.0, "y": -2500.0, "z": 0.0 },
           "rotation": { "pitch": 0.0, "yaw": 0.0, "roll": 0.0 },
-          "mesh": "SM_Maple",
-          "scare": 0,
+          "meshParts": [{ "componentTag": "Base", "meshKey": "SM_Maple"}],
+          "scare": 1,
           "scaretype": "Spider"
         },
         {
           "id": "tree_c",
           "type": "Tree",
-          "location": { "x": 0.0, "y": -250.0, "z": 0.0 },
+          "location": { "x": 3000.0, "y": -2500.0, "z": 0.0 },
           "rotation": { "pitch": 0.0, "yaw": 0.0, "roll": 0.0 },
-          "mesh": "SM_Maple",
+          "meshParts": [{ "componentTag": "Base", "meshKey": "SM_Maple"}],
+          "scare": 1,
+          "scaretype": "Spider"
+        },
+        {
+          "id": "tree_d",
+          "type": "Tree",
+          "location": { "x": 1000.0, "y": 25.0, "z": 0.0 },
+          "rotation": { "pitch": 0.0, "yaw": 0.0, "roll": 0.0 },
+          "meshParts": [{ "componentTag": "Base", "meshKey": "SM_Oak"}],
+          "scare": 1,
+          "scaretype": "Spider"
+        },
+        {
+          "id": "tree_e",
+          "type": "Tree",
+          "location": { "x": -350.0, "y": 510.0, "z": 0.0 },
+          "rotation": { "pitch": 0.0, "yaw": 0.0, "roll": 0.0 },
+          "meshParts": [{ "componentTag": "Base", "meshKey": "SM_Oak"}],
+          "scare": 1,
+          "scaretype": "Spider"
+        },
+        {
+          "id": "tree_f",
+          "type": "Tree",
+          "location": { "x": 2000.0, "y": 350.0, "z": 0.0 },
+          "rotation": { "pitch": 0.0, "yaw": 0.0, "roll": 0.0 },
+          "meshParts": [{ "componentTag": "Base", "meshKey": "SM_Oak"}],
           "scare": 0,
           "scaretype": "Spider"
         }
@@ -35,48 +62,10 @@
       "chests": [
         {
           "id": "chest_1",
-          "location": { "x": -395.0, "y": 220.0, "z": 40.0 }, 
+          "location": { "x": -35.0, "y": 20.0, "z": 0.0 }, 
           "rotation": { "pitch": 0.0, "yaw": -140.0, "roll": 1.0 },
           "landmarkId": "tree_a",
-          "mesh": "SM_Chest_Scare",
-          "reward": 10
-        },
-        {
-          "id": "chest_2",
-          "location": { "x": -220.0, "y": -240.0, "z": 40.0 },
-          "rotation": { "pitch": 0.0, "yaw": -50.0, "roll": 1.0 },
-          "landmarkId": "tree_b",
-          "mesh": "SM_Chest_Scare",
-          "reward": 10
-        },{
-          "id": "chest_3",
-          "location": { "x": 0.0, "y": 220.0, "z": 40.0 }, 
-          "rotation": { "pitch": 0.0, "yaw": -140.0, "roll": 1.0 },
-          "landmarkId": "tree_a",
-          "mesh": "SM_Chest",
-          "reward": 10
-        },
-        {
-          "id": "chest_4",
-          "location": { "x": 100.0, "y": -240.0, "z": 40.0 },
-          "rotation": { "pitch": 0.0, "yaw": -50.0, "roll": 1.0 },
-          "landmarkId": "rock_a",
-          "mesh": "SM_Chest",
-          "reward": 10
-        },{
-          "id": "chest_5",
-          "location": { "x": 350.0, "y": 220.0, "z": 0.0 }, 
-          "rotation": { "pitch": 0.0, "yaw": -140.0, "roll": 1.0 },
-          "landmarkId": "tree_a",
-          "mesh": "SM_Chest",
-          "reward": 10
-        },
-        {
-          "id": "chest_6",
-          "location": { "x": 350, "y": -240.0, "z": 0.0 },
-          "rotation": { "pitch": 0.0, "yaw": -50.0, "roll": 1.0 },
-          "landmarkId": "rock_a",
-          "mesh": "SM_Chest",
+          "meshParts": [{ "componentTag": "Base", "meshKey": "SM_Chest_Scare"}],
           "reward": 10
         }
       ]
@@ -84,54 +73,277 @@
     {
       "trialId": "trial_02",
       "landmarks": [
+       {
+          "id": "tree_a",
+          "type": "Tree",
+          "location": { "x": -100.0, "y": 600.0, "z": 0.0 },
+          "rotation": { "pitch": 0.0, "yaw": 90.0, "roll": 0.0 },
+          "meshParts": [{ "componentTag": "Base", "meshKey": "SM_Maple"}],
+          "scare": 0,
+          "scaretype": "Spider"
+        },
         {
           "id": "tree_b",
           "type": "Tree",
-          "location": { "x": -1000.0, "y": -400.0, "z": 0.0 },
-          "rotation": { "pitch": 0.0, "yaw": 180.0, "roll": 0.0 }
+          "location": { "x": -330.0, "y": -850.0, "z": 0.0 },
+          "rotation": { "pitch": 0.0, "yaw": 0.0, "roll": 0.0 },
+          "meshParts": [{ "componentTag": "Base", "meshKey": "SM_Maple"}],
+          "scare": 0,
+          "scaretype": "Spider"
         },
         {
-          "id": "pit_a",
-          "type": "Pit",
-          "location": { "x": 600.0, "y": -1200.0, "z": 0.0 },
-          "rotation": { "pitch": 0.0, "yaw": 0.0, "roll": 0.0 }
+          "id": "tree_c",
+          "type": "Tree",
+          "location": { "x": -100.0, "y": -950.0, "z": 0.0 },
+          "rotation": { "pitch": 0.0, "yaw": 0.0, "roll": 0.0 },
+          "meshParts": [{ "componentTag": "Base", "meshKey": "SM_Maple"}],
+          "scare": 0,
+          "scaretype": "Spider"
+        },
+        {
+          "id": "tree_d",
+          "type": "Tree",
+          "location": { "x": 3000.0, "y": 350.0, "z": 0.0 },
+          "rotation": { "pitch": 0.0, "yaw": 0.0, "roll": 0.0 },
+          "meshParts": [{ "componentTag": "Base", "meshKey": "SM_Oak"}],
+          "scare": 0,
+          "scaretype": "Spider"
+        },
+        {
+          "id": "tree_e",
+          "type": "Tree",
+          "location": { "x": 3500.0, "y": -2700.0, "z": 0.0 },
+          "rotation": { "pitch": 0.0, "yaw": 0.0, "roll": 0.0 },
+          "meshParts": [{ "componentTag": "Base", "meshKey": "SM_Oak"}],
+          "scare": 0,
+          "scaretype": "Spider"
+        },
+        {
+          "id": "tree_f",
+          "type": "Tree",
+          "location": { "x": -200.0, "y": -270.0, "z": 0.0 },
+          "rotation": { "pitch": 0.0, "yaw": 0.0, "roll": 0.0 },
+          "meshParts": [{ "componentTag": "Base", "meshKey": "SM_Oak"}],
+          "scare": 0,
+          "scaretype": "Spider"
         }
       ],
       "chests": [
         {
-          "id": "chest_1",
-          "location": { "x": -395.0, "y": 220.0, "z": 0.0 }, 
-          "rotation": { "pitch": 0.0, "yaw": 140.0, "roll": 1.0 },
-          "landmarkId": "tree_a"
+          "id": "chest_2",
+          "location": { "x": -20.0, "y": -20.0, "z": 0.0 },
+          "rotation": { "pitch": 0.0, "yaw": 50.0, "roll": 1.0 },
+          "landmarkId": "tree_b",
+          "meshParts": [{ "componentTag": "Base", "meshKey": "SM_Chest_Scare"}],
+          "reward": 10
+        }
+      ]
+    },
+    {
+      "trialId": "trial_03",
+      "landmarks": [
+        {
+          "id": "tree_a",
+          "type": "Tree",
+          "location": { "x": 0.0, "y": 40.0, "z": 0.0 },
+          "rotation": { "pitch": 0.0, "yaw": 90.0, "roll": 0.0 },
+          "meshParts": [{ "componentTag": "Base", "meshKey": "SM_Maple"}],
+          "scare": 0,
+          "scaretype": "Spider"
         },
         {
-          "id": "chest_2",
-          "location": { "x": -220.0, "y": -240.0, "z": 0.0 },
-          "rotation": { "pitch": 0.0, "yaw": 50.0, "roll": 1.0 },
-          "landmarkId": "rock_a"
-        },{
+          "id": "tree_b",
+          "type": "Tree",
+          "location": { "x": -20.0, "y": 25.0, "z": 0.0 },
+          "rotation": { "pitch": 0.0, "yaw": 0.0, "roll": 0.0 },
+          "meshParts": [{ "componentTag": "Base", "meshKey": "SM_Maple"}],
+          "scare": 0,
+          "scaretype": "Spider"
+        },
+        {
+          "id": "tree_c",
+          "type": "Tree",
+          "location": { "x": 0.0, "y": -500.0, "z": 0.0 },
+          "rotation": { "pitch": 0.0, "yaw": 0.0, "roll": 0.0 },
+          "meshParts": [{ "componentTag": "Base", "meshKey": "SM_Maple"}],
+          "scare": 0,
+          "scaretype": "Spider"
+        },
+        {
+          "id": "tree_d",
+          "type": "Tree",
+          "location": { "x": -100.0, "y": 250.0, "z": 0.0 },
+          "rotation": { "pitch": 0.0, "yaw": 0.0, "roll": 0.0 },
+          "meshParts": [{ "componentTag": "Base", "meshKey": "SM_Oak"}],
+          "scare": 0,
+          "scaretype": "Spider"
+        },
+        {
+          "id": "tree_e",
+          "type": "Tree",
+          "location": { "x": -500.0, "y": -210.0, "z": 0.0 },
+          "rotation": { "pitch": 0.0, "yaw": 0.0, "roll": 0.0 },
+          "meshParts": [{ "componentTag": "Base", "meshKey": "SM_Oak"}],
+          "scare": 0,
+          "scaretype": "Spider"
+        },
+        {
+          "id": "tree_f",
+          "type": "Tree",
+          "location": { "x": 270.0, "y": -350.0, "z": 0.0 },
+          "rotation": { "pitch": 0.0, "yaw": 0.0, "roll": 0.0 },
+          "meshParts": [{ "componentTag": "Base", "meshKey": "SM_Oak"}],
+          "scare": 0,
+          "scaretype": "Spider"
+        }
+      ],
+      "chests": [
+        {
           "id": "chest_3",
           "location": { "x": 0.0, "y": 220.0, "z": 0.0 }, 
           "rotation": { "pitch": 0.0, "yaw": 140.0, "roll": 1.0 },
-          "landmarkId": "tree_a"
+          "landmarkId": "tree_c",
+          "meshParts": [{ "componentTag": "Base", "meshKey": "SM_Chest_Scare"}],
+          "reward": 10
+        }
+      ]
+    },
+    {
+      "trialId": "trial_04",
+      "landmarks": [
+       {
+          "id": "tree_a",
+          "type": "Tree",
+          "location": { "x": -10.0, "y": -300.0, "z": 0.0 },
+          "rotation": { "pitch": 0.0, "yaw": 90.0, "roll": 0.0 },
+          "meshParts": [{ "componentTag": "Base", "meshKey": "SM_Maple"}],
+          "scare": 0,
+          "scaretype": "Spider"
         },
         {
+          "id": "tree_b",
+          "type": "Tree",
+          "location": { "x": 230.0, "y": 250.0, "z": 0.0 },
+          "rotation": { "pitch": 0.0, "yaw": 0.0, "roll": 0.0 },
+          "meshParts": [{ "componentTag": "Base", "meshKey": "SM_Maple"}],
+          "scare": 0,
+          "scaretype": "Spider"
+        },
+        {
+          "id": "tree_c",
+          "type": "Tree",
+          "location": { "x": 100.0, "y": -250.0, "z": 0.0 },
+          "rotation": { "pitch": 0.0, "yaw": 0.0, "roll": 0.0 },
+          "meshParts": [{ "componentTag": "Base", "meshKey": "SM_Maple"}],
+          "scare": 0,
+          "scaretype": "Spider"
+        },
+        {
+          "id": "tree_d",
+          "type": "Tree",
+          "location": { "x": 1.0, "y": -80.0, "z": 0.0 },
+          "rotation": { "pitch": 0.0, "yaw": 0.0, "roll": 0.0 },
+          "meshParts": [{ "componentTag": "Base", "meshKey": "SM_Oak"}],
+          "scare": 0,
+          "scaretype": "Spider"
+        },
+        {
+          "id": "tree_e",
+          "type": "Tree",
+          "location": { "x": 35.0, "y": -35.0, "z": 0.0 },
+          "rotation": { "pitch": 0.0, "yaw": 0.0, "roll": 0.0 },
+          "meshParts": [{ "componentTag": "Base", "meshKey": "SM_Oak"}],
+          "scare": 0,
+          "scaretype": "Spider"
+        },
+        {
+          "id": "tree_f",
+          "type": "Tree",
+          "location": { "x": 22.0, "y": 33.0, "z": 0.0 },
+          "rotation": { "pitch": 0.0, "yaw": 0.0, "roll": 0.0 },
+          "meshParts": [{ "componentTag": "Base", "meshKey": "SM_Oak"}],
+          "scare": 0,
+          "scaretype": "Spider"
+        }
+      ],
+      "chests": [
+        {
           "id": "chest_4",
-          "location": { "x": 100.0, "y": -240.0, "z": 0.0 },
+          "location": { "x": 100.0, "y": 140.0, "z": 0.0 },
           "rotation": { "pitch": 0.0, "yaw": 50.0, "roll": 1.0 },
-          "landmarkId": "rock_a"
-        },{
+          "landmarkId": "tree_d",
+          "meshParts": [{ "componentTag": "Base", "meshKey": "SM_Chest_Scare"}],
+          "reward": 10
+        }
+      ]
+    },
+    {
+      "trialId": "trial_05",
+      "landmarks": [
+       {
+          "id": "tree_a",
+          "type": "Tree",
+          "location": { "x": -100.0, "y": 30.0, "z": 0.0 },
+          "rotation": { "pitch": 0.0, "yaw": 90.0, "roll": 0.0 },
+          "meshParts": [{ "componentTag": "Base", "meshKey": "SM_Maple"}],
+          "scare": 0,
+          "scaretype": "Spider"
+        },
+        {
+          "id": "tree_b",
+          "type": "Tree",
+          "location": { "x": -20.0, "y": -20.0, "z": 0.0 },
+          "rotation": { "pitch": 0.0, "yaw": 0.0, "roll": 0.0 },
+          "meshParts": [{ "componentTag": "Base", "meshKey": "SM_Maple"}],
+          "scare": 0,
+          "scaretype": "Spider"
+        },
+        {
+          "id": "tree_c",
+          "type": "Tree",
+          "location": { "x": 0.0, "y": -280.0, "z": 0.0 },
+          "rotation": { "pitch": 0.0, "yaw": 0.0, "roll": 0.0 },
+          "meshParts": [{ "componentTag": "Base", "meshKey": "SM_Maple"}],
+          "scare": 0,
+          "scaretype": "Spider"
+        },
+        {
+          "id": "tree_d",
+          "type": "Tree",
+          "location": { "x": 80.0, "y": 80.0, "z": 0.0 },
+          "rotation": { "pitch": 0.0, "yaw": 0.0, "roll": 0.0 },
+          "meshParts": [{ "componentTag": "Base", "meshKey": "SM_Oak"}],
+          "scare": 0,
+          "scaretype": "Spider"
+        },
+        {
+          "id": "tree_e",
+          "type": "Tree",
+          "location": { "x": 50.0, "y": 110.0, "z": 0.0 },
+          "rotation": { "pitch": 0.0, "yaw": 0.0, "roll": 0.0 },
+          "meshParts": [{ "componentTag": "Base", "meshKey": "SM_Oak"}],
+          "scare": 0,
+          "scaretype": "Spider"
+        },
+        {
+          "id": "tree_f",
+          "type": "Tree",
+          "location": { "x": 0.0, "y": 0.0, "z": 0.0 },
+          "rotation": { "pitch": 0.0, "yaw": 0.0, "roll": 0.0 },
+          "meshParts": [{ "componentTag": "Base", "meshKey": "SM_Oak"}],
+          "scare": 0,
+          "scaretype": "Spider"
+        }
+      ],
+      "chests": [
+       {
           "id": "chest_5",
           "location": { "x": 350.0, "y": 220.0, "z": 0.0 }, 
           "rotation": { "pitch": 0.0, "yaw": 140.0, "roll": 1.0 },
-          "landmarkId": "tree_a"
-        },
-        {
-          "id": "chest_6",
-          "location": { "x": 350, "y": -240.0, "z": 0.0 },
-          "rotation": { "pitch": 0.0, "yaw": 50.0, "roll": 1.0 },
-          "landmarkId": "rock_a"
-        }
+          "landmarkId": "tree_e",
+          "meshParts": [{ "componentTag": "Base", "meshKey": "SM_Chest_Scare"}],
+          "reward": 10
+       }
       ]
     }
   ]
